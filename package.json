@@ -10,8 +10,14 @@
   "author": "Anne Fraysse",
   "license": "ISC",
   "dependencies": {
+    "ajv": "^6.1.1",
+    "babel-polyfill": "^6.26.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
     "semantic-ui-react": "^0.78.2",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
@@ -30,6 +36,8 @@
     "inert": "^5.1.0",
     "less": "^3.0.1",
     "less-loader": "^4.0.5",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
     "style-loader": "^0.20.2"
   },
   "babel": {
