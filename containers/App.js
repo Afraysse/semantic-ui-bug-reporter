@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Container, Button, Checkbox, Form, Header, Divider } from 'semantic-ui-react'
+import { Container, Button, Checkbox, Form, Header, Modal, Icon, Divider } from 'semantic-ui-react'
 
 const projectOptions = [
   {key: 'sched', text: 'Scheduling', value: 'Scheduling'},
@@ -63,7 +63,21 @@ class bugFormatLayout extends Component {
       <Form.Input fluid label='Bug Title' placeholder='Unable to log into...' />
       <Form.TextArea label="Bug Description" placeholder="Describe what happened." />
     </Form>
-
+    <Modal trigger={<Button primary>Submit</Button>} basic size='small'>
+    <Header content='Are you sure you are ready to submit this form?' />
+    <Modal.Content>
+      <p>Make sure you have reviewed all information before sending this form. Once submitted,
+      the contents of this form cannot be changed. Only commends and an open/close status can be applied. </p>
+      </Modal.Content>
+      <Modal.Actions>
+        <Button basic color='red' inverted>
+        <Icon name='remove' /> No
+        </Button>
+        <Button basic color='green' inverted>
+        <Icon name='checkmark' /> Yes
+        </Button>
+      </Modal.Actions>
+      </Modal>
 
     </Container>
     )
