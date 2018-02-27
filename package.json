@@ -40,6 +40,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "hapi": "^17.2.0",
+    "hapi-webpack-plugin": "^3.0.0",
     "inert": "^5.1.0",
     "less": "^3.0.1",
     "less-loader": "^4.0.5",
@@ -47,7 +48,10 @@
     "redux": "^3.7.2",
     "style-loader": "^0.20.2",
     "wdio-dot-reporter": "0.0.9",
-    "wdio-mocha-framework": "^0.5.12"
+    "wdio-mocha-framework": "^0.5.12",
+    "webpack-dashboard": "^1.1.1",
+    "webpack-dev-middleware": "^2.0.6",
+    "webpack-hot-middleware": "^2.21.0"
   },
   "babel": {
     "presets": [
